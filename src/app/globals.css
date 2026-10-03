@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #f4f7f8;
+  --foreground: #0f172a;
+  --surface: #ffffff;
+  --accent: #0f766e;
+  --border: #e2e8f0;
+  --font-sans: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "Cascadia Code", "SFMono-Regular", Consolas, "Liberation Mono",
+    Menlo, monospace;
+}
+
+body {
+  color: var(--foreground);
+  background:
+    radial-gradient(ellipse 80% 50% at 10% -10%, #d8f3ef 0%, transparent 55%),
+    radial-gradient(ellipse 60% 40% at 100% 0%, #e8eef5 0%, transparent 50%),
+    var(--background);
+  font-family: var(--font-sans);
+  min-height: 100vh;
+}
+
+code,
+.font-mono {
+  font-family: var(--font-mono);
+}
